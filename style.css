@@ -995,3 +995,27 @@ p {
     }
 
                     }
+/* ================= CLEAN SHOWCASE IMAGE ================= */
+
+.showcase-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.showcase-card .showcase-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    filter: none;
+    object-fit: contain;
+}
+
+.showcase-card::before,
+.showcase-card::after {
+    display: none !important;
+}
+
+.showcase-overlay {
+    display: none !important;
+}
